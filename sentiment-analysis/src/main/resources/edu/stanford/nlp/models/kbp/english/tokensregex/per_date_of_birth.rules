@@ -1,0 +1,4 @@
+{ result: "per:date_of_birth", pattern: ( $ENTITY /,/? /was/? /born/ /on/? $SLOT_VALUE ) }
+//Rules from Roth's manual patterns https://raw.githubusercontent.com/beroth/relationfactory/master/resources/manual_annotation/context_patterns2012.txt
+{ result: "per:date_of_birth", pattern: (  $ENTITY  ( "(" | "-LRB-" )  "born"  $SLOT_VALUE  ( ")" | "-RRB-" | "in"  ) ) }
+{ result: "per:date_of_birth", pattern: (  $ENTITY  ( "(" | "-LRB-" )  $SLOT_VALUE "-"  ) }

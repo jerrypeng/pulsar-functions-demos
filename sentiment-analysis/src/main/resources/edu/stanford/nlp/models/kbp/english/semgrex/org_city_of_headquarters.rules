@@ -1,0 +1,3 @@
+{ner:ORGANIZATION} >appos ( {} >/compound|nn|amod/ {ner:/CITY|LOCATION/}=slot )
+#{ner:ORGANIZATION} >/(prep_|nmod:)in/ {ner:/CITY|LOCATION/}=slot
+{ner:/ORGANIZATION/}=entity >/amod./ {lemma:/[a-zA-Z ]+-(based|area|registered|headquartered)/;ner:/CITY|LOCATION/}=slot

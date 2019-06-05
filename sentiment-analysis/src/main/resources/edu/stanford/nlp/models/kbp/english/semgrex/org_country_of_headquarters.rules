@@ -1,0 +1,6 @@
+{ner:ORGANIZATION} >appos ( {} >/compound|nn|amod/ {ner:/COUNTRY|LOCATION/}=slot )
+#{ner:ORGANIZATION} >/(prep_|nmod:)in/ {ner:/COUNTRY|LOCATION/}=slot
+{ner:/ORGANIZATION/}=entity >/amod./ {lemma:/[a-zA-Z ]+-(based|area|registered|headquartered)/;ner:/COUNTRY|LOCATION/}=slot
+{ner:ORGANIZATION} >appos ( {} >/compound|nn|amod/ {ner:/NATIONALITY|LOCATION/}=slot )
+#{ner:ORGANIZATION} >/(prep_|nmod:)in/ {ner:/NATIONALITY|LOCATION/}=slot
+{ner:/ORGANIZATION/}=entity >/amod./ {lemma:/[a-zA-Z ]+-(based|area|registered|headquartered)/;ner:/NATIONALITY|LOCATION/}=slot

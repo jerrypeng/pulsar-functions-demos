@@ -32,6 +32,7 @@
 
     <groupId>org.apache.pulsar</groupId>
     <artifactId>pulsar-functions-demos-debugging</artifactId>
+    <name>Pulsar Functions :: Demos :: Function Debugging</name>
 
     <dependencies>
         <dependency>
